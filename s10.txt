@@ -1,0 +1,38 @@
+s10.txt
+
+:Author: Yongwen Zhuang
+:Email: zeoman@163.com
+:Date: 2019-04-04 21:54
+
+一共110个
+
+0000: 9e 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+     保留00 00 00   头像  父亲    母亲  配偶    家族  兄弟
+0010: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+      仇敌  诞生    登场  死亡    声望  统帅    武力  智力
+0020: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+                                        00 00
+      政治  魅力    00 04 0001=女 03 02 02 02   势力相性 00-04 启用 义理00-04
+                                  性格     物欲    个人相性
+                                     饮酒
+                                        关心：武义收集读书
+0030: 00 00 02 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+               特技们             03
+      02 拥汉
+         03 战略
+            03 任务
+0040: 00 00 01 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+                    相同武将               类型05
+                    FF FF               信念05
+0050: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+                       姓氏--------- 00 名----------- 00 字
+0060: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+      -------- 00   读音----------------------------- 00 列传
+0070: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+--------------------------------------------------------
+0080: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+--------------------------------------------------------
+0100: 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00 _ 00 00 00 00
+---------------------- 下一个武将
+
+{"code":0,"msg":"success","message":"success","data":{"info":{"num":95,"page":10,"now":1},"list":[{"uid":368514,"ruid":137952,"rank":1,"username":"寻梦的虫","face":"https://i0.hdslb.com/bfs/face/bf31e533fdfddc1f4c78dd398fd1d68534e19805.jpg","is_alive":1,"guard_level":3},{"uid":495473,"ruid":137952,"rank":2,"username":"御坂旅皓","face":"https://i1.hdslb.com/bfs/face/8b3ecf916f1ff8784c28627439742effd64e8f8c.jpg","is_alive":1,"guard_level":3},{"uid":732201,"ruid":137952,"rank":3,"username":"TroM","face":"https://i2.hdslb.com/bfs/face/0757f5481ab909e74aefb65a7fd25cfcf1d9c81f.jpg","is_alive":1,"guard_level":3},{"uid":845028,"ruid":137952,"rank":4,"username":"RedSky","face":"https://i2.hdslb.com/bfs/face/5cc31a24cbe2e3f56279036e56d7696ab41566b7.jpg","is_alive":1,"guard_level":3},{"uid":858212,"ruid":137952,"rank":5,"username":"大唐第三龙","face":"https://i1.hdslb.com/bfs/face/a0e944eb69b4d7ec6ad0b05300ba1a7b2a26303f.jpg","is_alive":1,"guard_level":3},{"uid":1279105,"ruid":137952,"rank":6,"username":"无尽的紫夜","face":"https://i2.hdslb.com/bfs/face/cdeb28cac0abd43e7feda3d8b1303dbbfb996716.jpg","is_alive":1,"guard_level":3},{"uid":1300087,"ruid":137952,"rank":7,"username":"Hello-_-_-World","face":"https://i1.hdslb.com/bfs/face/555e28977538aa5baccac682ee06b2ce6aadfd3f.jpg","is_alive":1,"guard_level":3},{"uid":1509324,"ruid":137952,"rank":8,"username":"荧惑星星人","face":"https://i1.hdslb.com/bfs/face/3b4d58dde1a68b11a2349d07c3519d77d292aa02.jpg","is_alive":1,"guard_level":3},{"uid":1961637,"ruid":137952,"rank":9,"username":"freedomZY","face":"https://i2.hdslb.com/bfs/face/a1c8dffd6ccc4b06c1aba782517c1a1ebe1b6b4f.jpg","is_alive":1,"guard_level":3},{"uid":3128243,"ruid":137952,"rank":10,"username":"七之夜_","face":"https://i0.hdslb.com/bfs/face/0e109824f4e593052fc3bed85bc8679f54f20771.jpg","is_alive":1,"guard_level":3}],"top3":[{"uid":345336,"ruid":137952,"rank":1,"username":"音羽夜空","face":"https://i1.hdslb.com/bfs/face/1c431c09159f76ad5b5e4b5f9c0ac435a78eb42f.jpg","is_alive":0,"guard_level":2},{"uid":41927,"ruid":137952,"rank":2,"username":"喵森DD","face":"https://i2.hdslb.com/bfs/face/d492a8d7c9d650e208d6ec666cdf8d3443b095a8.jpg","is_alive":1,"guard_level":3},{"uid":136728,"ruid":137952,"rank":3,"username":"黑兔天下第一","face":"https://i2.hdslb.com/bfs/face/105c6028ec20fb175d7f4c75ec4e09db2d7e701b.jpg","is_alive":1,"guard_level":3}]}}
