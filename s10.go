@@ -54,10 +54,30 @@ func StringToByte(str string, min int, max int) []byte {
 
 func main() {
 
+	buff := bytes.NewBuffer([]byte{})
+	cnt := 0
 	excelFileName := "s10.xlsx"
 	xlFile, err := xlsx.OpenFile(excelFileName)
 	check(err)
+	if _, err := os.Stat("TPERSON.S10"); err == nil {
+		f, err := os.Open("TPERSON.S10")
+		check(err)
+		defer f.Close()
+		f.Seek(4, 0)
+		buf := make([]byte, 260)
+		for i := 0; i < 110; i++ {
+			_, err := f.Read(buf)
+			check(err)
+			if buf[0] == 0 && buf[1] == 0 {
+				break
+			} else {
+				cnt++
+				buff.Write(buf)
+			}
+		}
+	}
 	// For more granular writes, open a file for writing.
+	// 775 884
 	f, err := os.Create("TPERSON.S10")
 	check(err)
 	defer f.Close()
@@ -65,9 +85,7 @@ func main() {
 	// You can `Write` byte slices as you'd expect.
 	head := []byte{0x9e, 0x00, 0x00, 0x00}
 	f.Write(head)
-	buff := bytes.NewBuffer([]byte{})
 	sheet := xlFile.Sheets[0]
-	cnt := 0
 	for num, row := range sheet.Rows {
 		if num > 1 && row.Cells[0].String() != "" {
 			cnt++
